@@ -1,5 +1,5 @@
 name: ecr
-path: modules/storage/ecr/
+path: git::https://github.com/awslabs/idf-modules.git//modules/storage/ecr?ref=release/1.12.0&depth=1
 parameters:
   - name: repository_name
     value: "ecr-repository-1"

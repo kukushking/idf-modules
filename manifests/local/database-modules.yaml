@@ -1,5 +1,5 @@
 name: neptune
-path: modules/database/neptune
+path: git::https://github.com/awslabs/idf-modules.git//modules/database/neptune?ref=release/1.12.0&depth=1
 parameters:
   - name: vpc-id
     valueFrom:
@@ -17,7 +17,7 @@ parameters:
     value: 1
 ---
 name: mysql
-path: modules/database/rds
+path: git::https://github.com/awslabs/idf-modules.git//modules/database/rds?ref=release/1.12.0&depth=1
 targetAccount: primary
 parameters:
   - name: vpc-id
@@ -48,7 +48,7 @@ parameters:
     value: DESTROY
 ---
 name: postgresql
-path: modules/database/rds
+path: git::https://github.com/awslabs/idf-modules.git//modules/database/rds?ref=release/1.12.0&depth=1
 targetAccount: primary
 parameters:
   - name: vpc-id

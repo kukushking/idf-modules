@@ -1,5 +1,5 @@
 name: buckets
-path: modules/storage/buckets
+path: git::https://github.com/awslabs/idf-modules.git//modules/storage/buckets?ref=release/1.12.0&depth=1
 targetAccount: primary
 parameters:
   - name: encryption-type
@@ -8,7 +8,7 @@ parameters:
     value: RETAIN
 ---
 name: opensearch
-path: modules/storage/opensearch
+path: git::https://github.com/awslabs/idf-modules.git//modules/storage/opensearch?ref=release/1.12.0&depth=1
 targetAccount: primary
 parameters:
   - name: encryption-type
@@ -29,7 +29,7 @@ parameters:
         key: PrivateSubnetIds
 ---
 name: opensearch-s
-path: modules/storage/opensearch-serverless
+path: git::https://github.com/awslabs/idf-modules.git//modules/storage/opensearch-serverless?ref=release/1.12.0&depth=1
 parameters:
   - name: vpc-id
     valueFrom:
@@ -45,7 +45,7 @@ parameters:
         key: PrivateSubnetIds
 ---
 name: efs
-path: modules/storage/efs
+path: git::https://github.com/awslabs/idf-modules.git//modules/storage/efs?ref=release/1.12.0&depth=1
 targetAccount: primary
 parameters:
   - name: vpc-id
@@ -58,7 +58,7 @@ parameters:
     value: RETAIN
 ---
 name: fsx-lustre
-path: modules/storage/fsx-lustre
+path: git::https://github.com/awslabs/idf-modules.git//modules/storage/fsx-lustre?ref=release/1.12.0&depth=1
 parameters:
   - name: vpc-id
     valueFrom:
